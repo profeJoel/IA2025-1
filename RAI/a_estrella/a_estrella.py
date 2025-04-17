@@ -112,7 +112,7 @@ class a_estrella:
             sucesores.sort(key=ordenar_por_h)
             self.traspasar_a_por_explorar(sucesores, N)
 
-            return self.algoritmo_a_estrella(self.pop(), i+1)
+            return self.algoritmo_avara(self.pop(), i+1)
 
     def algoritmo_uniforme(self, inicial, i):
         self.estado_actual = inicial
@@ -138,7 +138,7 @@ class a_estrella:
             sucesores.sort(key=ordenar_por_g)
             self.traspasar_a_por_explorar(sucesores, N)
 
-            return self.algoritmo_a_estrella(self.pop(), i+1)
+            return self.algoritmo_uniforme(self.pop(), i+1)
 
     def init(self):
         self.add(self.estado_inicial)
