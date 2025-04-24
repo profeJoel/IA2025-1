@@ -74,7 +74,7 @@ class tablero:
                 if i%2 != 0:
                     print("\nGanador:",self.jugador1.nombre,"con",str(self.jugador1.cant_turnos),"turnos")
                 else:
-                    print("\nGanador:",self.jugador2.nombre,"con",str(self.jugador1.cant_turnos),"turnos")
+                    print("\nGanador:",self.jugador2.nombre,"con",str(self.jugador2.cant_turnos),"turnos")
                 break
             i += 1
         
